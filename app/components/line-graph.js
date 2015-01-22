@@ -66,6 +66,16 @@ export default Ember.Component.extend({
 		}
 	}.property('lineFn', 'data.[]'),
 
+	dataChanged: function(){
+		let element = this.get('element');
+		if(element) {
+			d3.select(element).selectAll('.line')
+				.transition()
+				.duration(500)
+				.attr('d', this.get('d'));
+		}
+	}.observes('data.[]').on('didInsertElement'),
+
 	xAxisFn: function(){
 		let xScale = this.get('xScale');
 		return d3.svg.axis().scale(xScale);
