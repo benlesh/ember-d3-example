@@ -1,0 +1,8 @@
+width: {{input type="range" value=width min="50" max="1000"}} {{width}} <br/>
+height: {{input type="range" value=height min="50" max="1000"}} {{height}}
+
+<hr/>
+
+{{line-graph data=model.data
+		width=width
+		height=height}}

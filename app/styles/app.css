@@ -1,3 +1,27 @@
 html, body {
   margin: 20px;
 }
+
+.line {
+	fill: none;
+	stroke: red;
+}
+
+.axis-line {
+	fill: none;
+	stroke: gray;
+}
+
+.x-axis-tick {
+	text-anchor: middle;
+	alignment-baseline: hanging;
+	font-family: Consolas, monospaced;
+	font-size: 10px;
+}
+
+.y-axis-tick {
+	text-anchor: end;
+	alignment-baseline: middle;
+	font-family: Consolas, monospaced;
+	font-size: 10px;
+}
