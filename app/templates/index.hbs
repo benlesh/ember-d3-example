@@ -6,3 +6,7 @@ height: {{input type="range" value=height min="50" max="1000"}} {{height}}
 {{line-graph data=model.data
 		width=width
 		height=height}}
+
+<hr/>
+
+<button {{action 'getNewData'}}>refresh data</button>
